@@ -19,4 +19,10 @@ if [ -f $HOME/.zshrc ]; then
 fi
 ln -sf `pwd`/zsh/.zshrc $HOME/.zshrc
 
+if [ -f $HOME/.vimrc ]; then
+  echo "Moving vimrc to ${bkupdir}"
+  mv $HOME/.vimrc $bkupdir
+fi
+ln -sf `pwd`/vim/.vimrc $HOME/.vimrc
+
 

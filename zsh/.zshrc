@@ -98,6 +98,5 @@ alias gd='cd ~/Google\ Drive'
 alias gs='gulp serve'
 alias pg="postgres -D /usr/local/var/postgres"
 
-alias qa='cd $HOME/code/CodeScience/mp/MP-QA && ssh -i mpqa.pem ec2-user@mpqa.codescience.us'
 
 
