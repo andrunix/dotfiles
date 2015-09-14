@@ -20,6 +20,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'elzr/vim-json'
 Plugin 'kien/ctrlp.vim'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'elixir-lang/vim-elixir'
 
 " let g:airline_theme='luna'
 " let g:airline#extensions#tabline#entabled = 1
