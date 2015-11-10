@@ -58,6 +58,7 @@
  '(scroll-bar-mode nil)
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
  '(standard-indent 2)
+ '(inhibit-startup-screen t)
  '(term-default-bg-color "#002b36")
  '(term-default-fg-color "#839496")
  '(tool-bar-mode nil)
