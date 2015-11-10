@@ -25,4 +25,12 @@ if [ -f $HOME/.vimrc ]; then
 fi
 ln -sf `pwd`/vim/.vimrc $HOME/.vimrc
 
+if [ -f $HOME/.emacs]; then
+  echo "Moving vimrc to ${bkupdir}"
+  mv $HOME/.emacs $bkupdir
+fi
+ln -sf `pwd`/emacs/.emacs $HOME/.emacs
+
+
+
 
