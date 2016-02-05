@@ -87,7 +87,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # - CodeScience related settings
-source ~/.cs/.cs.rc
+# source ~/.cs/.cs.rc
 
 
 # Android tools
@@ -100,3 +100,5 @@ alias pg="postgres -D /usr/local/var/postgres"
 
 
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
