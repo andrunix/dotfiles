@@ -49,7 +49,7 @@ ZSH_THEME="muse"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx bower node github npm brew sublime rails ruby)
+plugins=(git osx node github npm brew sublime rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -69,13 +69,13 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
-# export EDITOR='/usr/bin/vim'
+export EDITOR='/usr/bin/vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -83,8 +83,8 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 # - CodeScience related settings
 # source ~/.cs/.cs.rc
@@ -93,12 +93,17 @@ eval "$(rbenv init -)"
 # Android tools
 PATH=$PATH:$HOME/Library/Android/sdk/tools
 
+
 #### Andrew's Aliases
 alias gd='cd ~/Google\ Drive'
 alias gs='gulp serve'
 alias pg="postgres -D /usr/local/var/postgres"
 
+alias gcas="git commit -a --status"
 
 
+# - WeCounsel related settings
+source ~/.wecounsel/wecounsel.rc
 
+export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
