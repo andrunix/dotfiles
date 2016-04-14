@@ -86,13 +86,12 @@ export EDITOR='/usr/bin/vim'
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # eval "$(rbenv init -)"
 
-# - CodeScience related settings
-# source ~/.cs/.cs.rc
-
-
 # Android tools
-PATH=$PATH:$HOME/Library/Android/sdk/tools
+# PATH=$PATH:$HOME/Library/Android/sdk/tools
 
+# Golang stuff
+export GOPATH=$HOME/work
+export PATH=$PATH:$GOPATH/bin
 
 #### Andrew's Aliases
 alias gd='cd ~/Google\ Drive'
