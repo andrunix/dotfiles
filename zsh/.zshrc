@@ -84,7 +84,7 @@ export EDITOR='/usr/bin/vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # - CodeScience related settings
 # source ~/.cs/.cs.rc
