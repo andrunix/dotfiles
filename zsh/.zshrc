@@ -106,3 +106,5 @@ source ~/.wecounsel/wecounsel.rc
 
 export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

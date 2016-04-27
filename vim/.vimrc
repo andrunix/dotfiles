@@ -1,4 +1,4 @@
-
+runtime macros/matchit.vim
 set nocompatible 
 filetype off
 
@@ -22,6 +22,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scwood/vim-hybrid'
+Plugin 'kana/vim-textobj-user'
+Plugin 'rhysd/vim-textobj-ruby'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " let g:airline_theme='luna'
 " let g:airline#extensions#tabline#entabled = 1
@@ -56,6 +60,9 @@ set noswapfile
 set history=50
 
 " let base16colorspace=256
+
+" vim-markdown - disable folding
+let g:vim_markdown_folding_disabled = 1
 
 " syntax enable
 syntax on
