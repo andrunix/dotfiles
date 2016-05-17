@@ -42,7 +42,7 @@
  '(hl-fg-colors
 	 (quote
 		("#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36")))
- '(indent-tabs-mode t)
+ '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
  '(magit-diff-use-overlays nil)
