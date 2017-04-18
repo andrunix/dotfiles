@@ -101,10 +101,6 @@ alias gs='gulp serve'
 alias gcas="git commit -a --status"
 alias rs="rails s --binding=0.0.0.0"
 
-
-# - WeCounsel related settings
-source ~/.wecounsel/wecounsel.rc
-
 export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
