@@ -1,4 +1,6 @@
-# Emacs just works so well on Unix systems. On Windows, it works but not as easily. You have to fiddle with stuff.
+# Emacs Config Notes
+
+Emacs just works so well on Unix systems. On Windows, it works but not as easily. You have to fiddle with stuff.
 
 ## Windows 7
 At work, I have to run Windows 7 and my HOME directory is set to F:. 
