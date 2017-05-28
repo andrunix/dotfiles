@@ -119,5 +119,8 @@ If the new path's directores does not exist, create them."
 
 (setq make-backup-file-name-function 'my-backup-file-name)
 
+;; show line numbers in margin
+(setq global-linum-mode t)
+
 (global-git-gutter+-mode)
 
