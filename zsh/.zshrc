@@ -13,7 +13,7 @@ ZSH_THEME="muse"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment this to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -48,8 +48,8 @@ ZSH_THEME="muse"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx node github npm brew sublime rails ruby)
+# Example format: plugins=(rails git textmate ruby ouse)
+plugins=(git osx node github npm brew postgres sublime rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,24 +86,28 @@ export EDITOR='/usr/bin/vim'
 # export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# - CodeScience related settings
-# source ~/.cs/.cs.rc
-
-
 # Android tools
-PATH=$PATH:$HOME/Library/Android/sdk/tools
+# PATH=$PATH:$HOME/Library/Android/sdk/tools
 
+# Golang stuff
+export GOPATH=$HOME/work
+export PATH=$PATH:$GOPATH/bin
 
 #### Andrew's Aliases
-alias gd='cd ~/Google\ Drive'
+# alias gd='cd ~/Google\ Drive'
 alias gs='gulp serve'
-alias pg="postgres -D /usr/local/var/postgres"
+# alias pg="postgres -D /usr/local/var/postgres"
 
 alias gcas="git commit -a --status"
-
-
-# - WeCounsel related settings
-source ~/.wecounsel/wecounsel.rc
+alias rs="rails s --binding=0.0.0.0"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+alias npm-exec='PATH=$(npm bin):$PATH'
+
+
+export NVM_DIR="/Users/andrewpierce/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
