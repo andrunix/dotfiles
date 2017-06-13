@@ -9,15 +9,18 @@
 	 [default default default italic underline success warning error])
  '(ansi-color-names-vector
 	 ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#657b83"])
+ '(ansi-term-color-vector
+	 [unspecified "#151718" "#CE4045" "#9FCA56" "#DCCD69" "#55B5DB" "#A074C4" "#55B5DB" "#D4D7D6"])
  '(compilation-message-face (quote default))
  '(cua-global-mark-cursor-color "#2aa198")
  '(cua-normal-cursor-color "#839496")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(custom-enabled-themes (quote (seti)))
+ '(cursor-type (quote bar))
+ '(custom-enabled-themes (quote (manoj-dark)))
  '(custom-safe-themes
 	 (quote
-		("94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+		("12b7ed9b0e990f6d41827c343467d2a6c464094cbcc6d0844df32837b50655f9" "6c62b1cd715d26eb5aa53843ed9a54fc2b0d7c5e0f5118d4efafa13d7715c56e" "870a63a25a2756074e53e5ee28f3f890332ddc21f9e87d583c5387285e882099" "0aa12caf6127772c1a38f7966de8258e7a0651fb6f7220d0bbb3a0232fba967f" "94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(fci-rule-color "#073642")
  '(highlight-changes-colors (quote ("#d33682" "#6c71c4")))
  '(highlight-symbol-colors
@@ -118,3 +121,5 @@ If the new path's directores does not exist, create them."
 
 (global-git-gutter+-mode)
 
+;; show line numbers in margin
+(global-linum-mode t)

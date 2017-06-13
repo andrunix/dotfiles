@@ -22,6 +22,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scwood/vim-hybrid'
+
 Plugin 'kana/vim-textobj-user'
 Plugin 'rhysd/vim-textobj-ruby'
 Plugin 'godlygeek/tabular'
@@ -30,11 +31,20 @@ Plugin 'niftylettuce/vim-jinja'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 
+" Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
+" let g:airline_theme='luna'
+" let g:airline#extensions#tabline#entabled = 1
+
+
 " 
 call vundle#end()           " required
 filetype plugin indent on   " required
 
 set number
+let g:jsx_ext_required = 0
+
 set ruler
 set encoding=utf8
 set colorcolumn=80
@@ -43,7 +53,7 @@ set colorcolumn=80
 set tabstop=2 shiftwidth=2
 
 " Indentation
-" set expandtab
+set expandtab
 set smarttab
 " set shiftwidth=2
 " set softtabstop=2
@@ -65,7 +75,8 @@ set background=dark
 " colorscheme solarized
 " colorscheme base16-eighties
 " colorscheme base16-chalk
-colorscheme hybrid
+" colorscheme hybrid
+colorscheme luna
 
 " let g:solarized_termcolors=256
 

@@ -31,7 +31,7 @@ CASE_SENSITIVE="true"
 # DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -60,10 +60,8 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=$PATH:$MYSQL
 # export DYLD_LIBRARY_PATH=/usr/local/mysql/liib:$DYLD_LIBRARY_PATH
 
-
 # export PATH="/usr/local/var/rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -84,14 +82,7 @@ export EDITOR='/usr/bin/vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
-
-# Android tools
-# PATH=$PATH:$HOME/Library/Android/sdk/tools
-
-# Golang stuff
-export GOPATH=$HOME/work
-export PATH=$PATH:$GOPATH/bin
+eval "$(rbenv init -)"
 
 #### Andrew's Aliases
 # alias gd='cd ~/Google\ Drive'
@@ -101,6 +92,7 @@ alias gs='gulp serve'
 alias gcas="git commit -a --status"
 alias rs="rails s --binding=0.0.0.0"
 
+# This will not work with Windows... but I don't run zsh on Windows anyway
 export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
@@ -109,5 +101,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 alias npm-exec='PATH=$(npm bin):$PATH'
 
 
-export NVM_DIR="/Users/andrewpierce/.nvm"
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# export JAVA_HOME=$(/usr/libexec/java_home)
+
