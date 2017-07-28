@@ -119,7 +119,7 @@ If the new path's directores does not exist, create them."
 
 (setq make-backup-file-name-function 'my-backup-file-name)
 
-(global-git-gutter+-mode)
+;;(global-git-gutter+-mode)
 
 ;; show line numbers in margin
 (global-linum-mode t)
