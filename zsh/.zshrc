@@ -49,12 +49,11 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby ouse)
-plugins=(git osx node github npm brew postgres sublime rails ruby)
+plugins=(copybuffer dotenv git osx node git git-extras github npm brew postgres gem rails rbenv ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 
 # MYSQL=/usr/local/mysql/bin
 # export PATH=$PATH:$MYSQL
@@ -73,7 +72,7 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-export EDITOR='/usr/bin/vim'
+export EDITOR='/usr/bin/emacs'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -86,7 +85,6 @@ eval "$(rbenv init -)"
 
 #### Andrew's Aliases
 # alias gd='cd ~/Google\ Drive'
-alias gs='gulp serve'
 # alias pg="postgres -D /usr/local/var/postgres"
 
 alias gcas="git commit -a --status"
@@ -94,9 +92,9 @@ alias rs="rails s --binding=0.0.0.0"
 
 # This will not work with Windows... but I don't run zsh on Windows anyway
 export NODE_PATH="/usr/local/lib/node_modules"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 alias npm-exec='PATH=$(npm bin):$PATH'
 
@@ -105,4 +103,8 @@ export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Gem
+export GEM_HOME=~/.gem
+export PATH=$PATH:$GEM_HOME/bin
 

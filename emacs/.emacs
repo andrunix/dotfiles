@@ -6,57 +6,62 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
-	 [default default default italic underline success warning error])
+   [default default default italic underline success warning error])
  '(ansi-color-names-vector
-	 ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#657b83"])
+   ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#657b83"])
  '(ansi-term-color-vector
-	 [unspecified "#151718" "#CE4045" "#9FCA56" "#DCCD69" "#55B5DB" "#A074C4" "#55B5DB" "#D4D7D6"])
+   [unspecified "#151718" "#CE4045" "#9FCA56" "#DCCD69" "#55B5DB" "#A074C4" "#55B5DB" "#D4D7D6"])
+ '(blink-cursor-mode nil)
  '(compilation-message-face (quote default))
  '(cua-global-mark-cursor-color "#2aa198")
  '(cua-normal-cursor-color "#839496")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(cursor-type (quote bar))
- '(custom-enabled-themes (quote (manoj-dark)))
+ '(cursor-type (quote box))
+ '(custom-enabled-themes (quote (dracula)))
  '(custom-safe-themes
-	 (quote
-		("12b7ed9b0e990f6d41827c343467d2a6c464094cbcc6d0844df32837b50655f9" "6c62b1cd715d26eb5aa53843ed9a54fc2b0d7c5e0f5118d4efafa13d7715c56e" "870a63a25a2756074e53e5ee28f3f890332ddc21f9e87d583c5387285e882099" "0aa12caf6127772c1a38f7966de8258e7a0651fb6f7220d0bbb3a0232fba967f" "94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+   (quote
+    ("eecacf3fb8efc90e6f7478f6143fd168342bbfa261654a754c7d47761cec07c8" "ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" "12b7ed9b0e990f6d41827c343467d2a6c464094cbcc6d0844df32837b50655f9" "6c62b1cd715d26eb5aa53843ed9a54fc2b0d7c5e0f5118d4efafa13d7715c56e" "870a63a25a2756074e53e5ee28f3f890332ddc21f9e87d583c5387285e882099" "0aa12caf6127772c1a38f7966de8258e7a0651fb6f7220d0bbb3a0232fba967f" "94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(fci-rule-color "#073642")
  '(highlight-changes-colors (quote ("#d33682" "#6c71c4")))
  '(highlight-symbol-colors
-	 (--map
-		(solarized-color-blend it "#002b36" 0.25)
-		(quote
-		 ("#b58900" "#2aa198" "#dc322f" "#6c71c4" "#859900" "#cb4b16" "#268bd2"))))
+   (--map
+    (solarized-color-blend it "#002b36" 0.25)
+    (quote
+     ("#b58900" "#2aa198" "#dc322f" "#6c71c4" "#859900" "#cb4b16" "#268bd2"))))
  '(highlight-symbol-foreground-color "#93a1a1")
  '(highlight-tail-colors
-	 (quote
-		(("#073642" . 0)
-		 ("#546E00" . 20)
-		 ("#00736F" . 30)
-		 ("#00629D" . 50)
-		 ("#7B6000" . 60)
-		 ("#8B2C02" . 70)
-		 ("#93115C" . 85)
-		 ("#073642" . 100))))
+   (quote
+    (("#073642" . 0)
+     ("#546E00" . 20)
+     ("#00736F" . 30)
+     ("#00629D" . 50)
+     ("#7B6000" . 60)
+     ("#8B2C02" . 70)
+     ("#93115C" . 85)
+     ("#073642" . 100))))
  '(hl-bg-colors
-	 (quote
-		("#7B6000" "#8B2C02" "#990A1B" "#93115C" "#3F4D91" "#00629D" "#00736F" "#546E00")))
+   (quote
+    ("#7B6000" "#8B2C02" "#990A1B" "#93115C" "#3F4D91" "#00629D" "#00736F" "#546E00")))
  '(hl-fg-colors
-	 (quote
-		("#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36")))
+   (quote
+    ("#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36")))
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
+ '(line-number-mode nil)
  '(magit-diff-use-overlays nil)
  '(menu-bar-mode nil)
  '(nrepl-message-colors
-	 (quote
-		("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
+   (quote
+    ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-archives
-	 (quote
-		(("melpa" . "http://melpa.milkbox.net/packages/")
-		 ("gnu" . "http://elpa.gnu.org/packages/"))))
+   (quote
+    (("melpa" . "https://melpa.org/packages/")
+     ("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(package-selected-packages
+   (quote
+    (php-mode git-gutter git-gutter+ rjsx-mode fiplr web-beautify rust-mode vue-html-mode cargo flycheck-rust flymake-jshint flymake-jslint flymake-json flymake-rust flymake-sass flymake-shell flymd markdown-mode dracula-theme vue-mode)))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(scroll-bar-mode nil)
@@ -68,33 +73,33 @@
  '(tool-bar-mode nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
-	 (quote
-		((20 . "#dc322f")
-		 (40 . "#c37300")
-		 (60 . "#b97d00")
-		 (80 . "#b58900")
-		 (100 . "#a18700")
-		 (120 . "#9b8700")
-		 (140 . "#948700")
-		 (160 . "#8d8700")
-		 (180 . "#859900")
-		 (200 . "#5a942c")
-		 (220 . "#439b43")
-		 (240 . "#2da159")
-		 (260 . "#16a870")
-		 (280 . "#2aa198")
-		 (300 . "#009fa7")
-		 (320 . "#0097b7")
-		 (340 . "#008fc7")
-		 (360 . "#268bd2"))))
+   (quote
+    ((20 . "#dc322f")
+     (40 . "#c37300")
+     (60 . "#b97d00")
+     (80 . "#b58900")
+     (100 . "#a18700")
+     (120 . "#9b8700")
+     (140 . "#948700")
+     (160 . "#8d8700")
+     (180 . "#859900")
+     (200 . "#5a942c")
+     (220 . "#439b43")
+     (240 . "#2da159")
+     (260 . "#16a870")
+     (280 . "#2aa198")
+     (300 . "#009fa7")
+     (320 . "#0097b7")
+     (340 . "#008fc7")
+     (360 . "#268bd2"))))
  '(vc-annotate-very-old-color nil)
  '(weechat-color-list
-	 (quote
-		(unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83")))
+   (quote
+    (unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83")))
  '(xterm-color-names
-	 ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"])
+   ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"])
  '(xterm-color-names-bright
-	 ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"]))
+   ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"]))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -102,6 +107,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+
+;; use rjsx-mode in javascript files
+(add-to-list 'auto-mode-alist '("components\\/.*\\.js\\'" . rjsx-mode))
 
 ;; make backup to a designated dir, mirroring the full path
 (defun my-backup-file-name (fpath)
@@ -119,7 +127,19 @@ If the new path's directores does not exist, create them."
 
 (setq make-backup-file-name-function 'my-backup-file-name)
 
-;;(global-git-gutter+-mode)
+(global-git-gutter+-mode)
 
 ;; show line numbers in margin
 (global-linum-mode t)
+
+(setq ring-bell-function 'ignore)
+
+;; fiplr config
+(setq fiplr-root-markers '(".git"))
+
+(setq fiplr-ignored-globs '((directories (".git"))
+                            (files ("*.jpg" "*.gif" "*.png" "*.zip"))))
+
+(global-set-key (kbd "C-x f") 'fiplr-find-file)
+
+
