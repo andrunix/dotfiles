@@ -106,3 +106,4 @@ export NVM_DIR="${HOME}/.nvm"
 
 # export JAVA_HOME=$(/usr/libexec/java_home)
 
+alias e="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
