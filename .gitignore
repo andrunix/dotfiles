@@ -8,4 +8,6 @@ emacs/.emacs.d/auto-save-list
 *.elc
 emacs/.emacs.d/ido.last
 emacs/.emacs.d/ac-comphist.dat
+emacs/.emacs.d/projectile-bookmarks.eld
+
 

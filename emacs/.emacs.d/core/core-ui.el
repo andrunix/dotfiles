@@ -28,6 +28,7 @@
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
+(setq-default js-indent-mode 2)
 (setq-default indicate-empty-lines nil)
 
 (setq-default truncate-lines t)
@@ -44,11 +45,8 @@
 (when (display-graphic-p)
   (set-frame-height (selected-frame) 40)
   (when (member "Consolas" (font-family-list))
-    (add-to-list 'default-frame-alist '(font . "Consolas-10")))
-  ;; (load-theme 'solarized-light t)
-)
+    (add-to-list 'default-frame-alist '(font . "Consolas-10"))))
 
 (global-set-key (kbd "<f2>") 'xah-new-empty-buffer)    ; F2
-(global-set-key (kbd "H-<return>") 'toggle-fullscreen)
 
 (provide 'core-ui)
