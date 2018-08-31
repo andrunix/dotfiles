@@ -25,13 +25,6 @@ if [ -f $HOME/.vimrc ]; then
 fi
 ln -sf `pwd`/vim/.vimrc $HOME/.vimrc
 
-if [ -d $HOME/.emacs.d ]; then
-  echo "Moving emacs.d to ${bkupdir}"
-  mv $HOME/.emacs.d $bkupdir
-fi
-
-cp -r `pwd`/emacs/.emacs.d $HOME/
-# ln -sf `pwd`/emacs/.emacs $HOME/.emacs
 
 
 
