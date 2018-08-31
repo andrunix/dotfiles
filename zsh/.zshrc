@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby ouse)
-plugins=(git osx node github npm brew postgres sublime rails ruby)
+plugins=(git node github npm postgres)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,7 +73,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-export EDITOR='/usr/bin/vim'
+# export EDITOR='/usr/bin/vim'
+export EDITOR=/usr/bin/emacs26
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -82,15 +83,13 @@ export EDITOR='/usr/bin/vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 #### Andrew's Aliases
-# alias gd='cd ~/Google\ Drive'
-alias gs='gulp serve'
 # alias pg="postgres -D /usr/local/var/postgres"
 
 alias gcas="git commit -a --status"
-alias rs="rails s --binding=0.0.0.0"
+# alias rs="rails s --binding=0.0.0.0"
 
 # This will not work with Windows... but I don't run zsh on Windows anyway
 export NODE_PATH="/usr/local/lib/node_modules"
